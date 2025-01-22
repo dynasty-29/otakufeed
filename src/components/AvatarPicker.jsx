@@ -3,9 +3,9 @@ import React, { useState } from 'react';
 
 /// working to use various avatars 
 const avatars = [
-    '/avatar1.png',
-    '/avatar2.png',
-    '/avatar3.png'
+    `${import.meta.env.BASE_URL}avatar1.png`,
+    `${import.meta.env.BASE_URL}avatar2.png`,
+    `${import.meta.env.BASE_URL}avatar3.png`,
 ];
 
 //component to andle my avatars

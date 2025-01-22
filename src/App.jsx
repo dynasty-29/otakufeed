@@ -7,6 +7,8 @@ import DailyFeed from './components/DailyFeed';
 import Badge from './components/Badge';
 import PostForm from './components/PostForm';
 import PostList from './components/PostList';
+import './index.css'
+
 
 // app component
 function App() {
