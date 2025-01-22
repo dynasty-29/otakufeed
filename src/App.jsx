@@ -13,7 +13,7 @@ import './index.css'
 // app component
 function App() {
   const [posts, setPosts] = useState([]);
-  const [avatar, setAvatar] = useState('/avatar1.png');
+  const [avatar, setAvatar] = useState('${import.meta.env.BASE_URL}avatar1.png`');
   const [username] = useState('OtakuMaster');
   const [fandoms] = useState(['Anime', 'K-Pop', 'K-Drama']);
   const [karma] = useState(75);
