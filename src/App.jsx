@@ -8,9 +8,10 @@ import Badge from './components/Badge';
 import PostForm from './components/PostForm';
 import PostList from './components/PostList';
 
-const App = () => {
+// app component
+function App() {
   const [posts, setPosts] = useState([]);
-  const [avatar, setAvatar] = useState('/assets/avatar1.png');
+  const [avatar, setAvatar] = useState('/avatar1.png');
   const [username] = useState('OtakuMaster');
   const [fandoms] = useState(['Anime', 'K-Pop', 'K-Drama']);
   const [karma] = useState(75);

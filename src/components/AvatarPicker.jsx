@@ -1,14 +1,19 @@
 import React, { useState } from 'react';
 
+
+/// working to use various avatars 
 const avatars = [
     '/avatar1.png',
     '/avatar2.png',
-    '/avatar3.png',
+    '/avatar3.png'
 ];
 
-const AvatarPicker = ({ setAvatar }) => {
+//component to andle my avatars
+function AvatarPicker({ setAvatar }) {
+    //statet array
     const [selected, setSelected] = useState(avatars[0]);
 
+    //event handler
     const handleSelect = (avatar) => {
         setSelected(avatar);
         setAvatar(avatar);

@@ -2,8 +2,9 @@
 body {
   font-family: "Montserrat", serif;
   background-color: #044c2f;
-  margin: 60px;
-  padding: 40px;
+  margin: 80px;
+  padding: 60px;
+  align-items: center;
 }
 
 .app {

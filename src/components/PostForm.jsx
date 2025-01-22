@@ -1,11 +1,19 @@
 import React, { useState } from 'react';
 
-const PostForm = ({ addPost }) => {
+
+//post form components
+function PostForm({ addPost }){
+
+  //arrays to keep track of my states
   const [content, setContent] = useState('');
   const [username, setUsername] = useState('');
 
-  const handleSubmit = (e) => {
+  //event handler function that handles submit
+  function handleSubmit(e){
+    //Prevent default form action
     e.preventDefault();
+
+    //condition to help add posts
     if (content && username) {
       addPost({ username, content });
       setContent('');

@@ -1,9 +1,14 @@
 import React, { useState } from 'react';
 
-const Post = ({ post }) => {
+
+//Post component
+function Post({ post }){
+
+  //Arrays to help me keep track of reactions
   const [reactions, setReactions] = useState({ kawaii: 0, senpai: 0, bias: 0 });
 
-  const addReaction = (reaction) => {
+  //function to handle reaction events
+  function addReaction(reaction){
     setReactions({ ...reactions, [reaction]: reactions[reaction] + 1 });
   };
 
